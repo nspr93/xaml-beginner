@@ -12,8 +12,11 @@
             <RowDefinition Height="0.9*"/>
             <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
-        <TextBlock Foreground="White" FontSize="32" Grid.Row="1" Style="{ThemeResource BodyTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Run Text="**Clear All Orders**"/>
-        </TextBlock>
+        <Button Content="Clear All Orders" Background="Gray" Foreground="White" FontSize="32" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <GridView Grid.Row="0">
+        </GridView>
+        <AppBar RequestedTheme="Dark">
+            <AppBarButton Icon="Home" Label="Home" Foreground="White" Click="AppBarButton_Click"/>
+        </AppBar>
     </Grid>
 </Page>
