@@ -9,11 +9,12 @@
 
     <Grid Background="Black">
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="0.05*"/>
+            <RowDefinition Height="0.85*"/>
             <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
-        <Button Content="Clear All Orders" Background="Gray" Foreground="White" FontSize="32" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <GridView Grid.Row="0">
+        <Button Content="Clear All Orders" Background="Gray" Foreground="White" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <GridView Grid.Row="1" ItemsSource="{Binding OrderItems, Source={StaticResource DataManager}}">
         </GridView>
         <AppBar RequestedTheme="Dark">
             <AppBarButton Icon="Home" Label="Home" Foreground="White" Click="AppBarButton_Click"/>

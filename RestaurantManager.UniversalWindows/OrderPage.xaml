@@ -28,9 +28,9 @@
         </TextBlock>
         <Button Content="Add to Order" Background="Gray" Foreground="White" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Content="Submit Order" Background="Gray" Foreground="White" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <ListView Grid.Column="0" Grid.Row="1" Grid.RowSpan="3">
+        <ListView Grid.Column="0" Grid.Row="1" Grid.RowSpan="3" x:Name="MenuItemsListView" ItemsSource="{Binding MenuItems, Source={StaticResource DataManager}}">
         </ListView>
-        <ListView Grid.Column="2" Grid.Row="2" Grid.RowSpan="2">
+        <ListView Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" x:Name="CSMListView" ItemsSource="{Binding CurrentlySelectedMenuItems, Source={StaticResource DataManager}}">
         </ListView>
         <AppBar RequestedTheme="Dark" Grid.ColumnSpan="3">
             <AppBarButton Icon="Home" Label="Home" Foreground="White" Click="AppBarButton_Click"/>

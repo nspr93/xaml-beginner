@@ -5,9 +5,10 @@
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{StaticResource DataManager}"
     mc:Ignorable="d">
 
-    <Grid Background="Black" Padding="0,0,20,20">
+    <Grid Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.4*"/>
             <RowDefinition Height="0.1*"/>
@@ -17,13 +18,13 @@
             <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition Width="0.5*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Foreground="White" FontSize="32" Grid.Row="0" Grid.ColumnSpan="2" Style="{ThemeResource BodyTextBlockStyle}"  VerticalAlignment="Bottom" HorizontalAlignment="Center">
+        <TextBlock Foreground="White" Grid.Row="0" Grid.ColumnSpan="2"  VerticalAlignment="Bottom" HorizontalAlignment="Center">
             <Run Text="Restaurant Manager"/>
         </TextBlock>
-        <TextBlock Foreground="White" FontSize="20" Grid.Row="1" Grid.ColumnSpan="2" Style="{ThemeResource BodyTextBlockStyle}"  HorizontalAlignment="Center" VerticalAlignment="Center" >
+        <TextBlock Foreground="White" Grid.Row="1" Grid.ColumnSpan="2"  HorizontalAlignment="Center" VerticalAlignment="Center" >
             <Run Text="Internal Test Version"/>
         </TextBlock>
-        <Button Content="Go to Orders View" Background="Gray" Foreground="White" FontSize="20" Grid.Row="2" Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click"/>
-        <Button Content="Submit Order" Background="Gray" Foreground="White" FontSize="20" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button Content="Go to Orders View" Background="Gray" Foreground="White" Grid.Row="2" Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click"/>
+        <Button Content="Submit Order" Background="Gray" Foreground="White" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1"/>
     </Grid>
 </Page>
